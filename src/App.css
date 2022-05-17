@@ -1,0 +1,77 @@
+.custom-notyf {
+  color: #000000;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 35px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 15px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+  gap: 15px;
+}
+
+.profile-picture {
+  background-image: url(/src/ava.jpg);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.profile-bio {
+  align-self: flex-end;
+}
+
+.section-container {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 15px;
+  transition: 250ms;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #d5d5d5;
+  color: #000000;
+  transition: 250ms;
+}
+
+@media only screen and (max-width: 715px) {
+  .main-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .profile-bio {
+    width: 128px;
+  }
+}
